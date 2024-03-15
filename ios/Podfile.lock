@@ -17,6 +17,10 @@ SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   geolocator_apple: 9157311f654584b9bb72686c55fc02a97b73f461
 
+<<<<<<< HEAD
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
+=======
+PODFILE CHECKSUM: cf86fcba3fb3dbd505936bc190bb0b8fe3dd2498
+>>>>>>> Feature/Presentation
 
 COCOAPODS: 1.14.3

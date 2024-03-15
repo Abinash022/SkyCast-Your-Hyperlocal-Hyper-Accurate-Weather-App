@@ -13,7 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Forecastify',
+<<<<<<< HEAD
       theme: ThemeData.dark(),
+=======
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+      ),
+>>>>>>> Feature/Presentation
       home: const HomePage(),
     );
   }

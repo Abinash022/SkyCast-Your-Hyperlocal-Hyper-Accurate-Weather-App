@@ -42,3 +42,7 @@ post_install do |installer|
     flutter_additional_ios_build_settings(target)
   end
 end
+<<<<<<< HEAD
+=======
+
+>>>>>>> Feature/Presentation

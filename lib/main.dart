@@ -14,19 +14,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Forecastify',
-<<<<<<< HEAD
-      theme: ThemeData.dark(),
-=======
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.black,
-      ),
->>>>>>> Feature/Presentation
-      home: const HomePage(),
-=======
     return FutureBuilder(
       future: GeoLocator().determinePosition(),
       builder: (context, snapshot) {
@@ -53,7 +40,6 @@ class MyApp extends StatelessWidget {
           );
         }
       },
->>>>>>> origin/Feature/Api-Integration
     );
   }
 }

@@ -1,18 +1,12 @@
-<<<<<<< HEAD
 import 'package:flutter/material.dart';
-=======
+
 import 'dart:ui';
 
-import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:weather_application/Presentation/Widgets/temprature_card.dart';
->>>>>>> Feature/Presentation
-=======
->>>>>>> origin/Feature/Api-Integration
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:weather_application/Presentation/Widgets/temprature_card.dart';
+
 import 'package:weather_application/Presentation/Widgets/weather_condition.dart';
 import 'package:weather_application/bloc/weather_bloc.dart';
 
@@ -32,9 +26,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
     return Scaffold(
-<<<<<<< HEAD
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
@@ -44,35 +36,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-      body: const Column(
-        children: [
-          Text(
-            'Good Morning',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-            ),
-          )
-        ],
-      ),
-=======
-      body: Padding(
-        padding: const EdgeInsets.fromLTRB(40, 1.2 * kToolbarHeight, 40, 20),
-        child: SizedBox(
-          height: MediaQuery.of(context).size.height,
-          child: Stack(
-            children: [
-              Align(
-                alignment: const AlignmentDirectional(3, -0.3),
-                child: Container(
-                  height: 300,
-                  width: 250,
-                  decoration: const BoxDecoration(
-                    color: Colors.deepPurple,
-                    shape: BoxShape.circle,
-=======
-    return Scaffold(body: BlocBuilder<WeatherBloc, WeatherState>(
-      builder: (context, state) {
+      body: BlocBuilder<WeatherBloc, WeatherState>(builder: (context, state) {
         if (state is WeatherFailure) {
           return const Center(
             child: Text(
@@ -115,7 +79,6 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.deepPurple,
                       shape: BoxShape.circle,
                     ),
->>>>>>> origin/Feature/Api-Integration
                   ),
                 ),
                 Align(
@@ -272,15 +235,8 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
-<<<<<<< HEAD
-        ),
-      ),
->>>>>>> Feature/Presentation
-    );
-=======
         );
-      },
-    ));
->>>>>>> origin/Feature/Api-Integration
+      }),
+    );
   }
 }
